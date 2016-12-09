@@ -37,3 +37,24 @@
 }
 
 .sponsor-bg { background: #e0e0e0; }
+
+.bg-gradient {
+  background: linear-gradient(270deg, #a24bcf, #4b79cf, #4bc5cf);
+  background-size: 200% 200%;
+  @include prefix((animation: gradientAnimation 20s ease infinite));
+}
+@-webkit-keyframes gradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
