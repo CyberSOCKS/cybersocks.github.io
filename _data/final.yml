@@ -15,10 +15,6 @@
   university: Universiti Teknologi Petronas
   country: malaysia
   rank: 4
-- name:  ~LastPew~
-  university: Multimedia University
-  country: malaysia
-  rank: 5
 - name: CRYP70
   university: Universiti Teknologi Petronas
   country: malaysia
@@ -43,15 +39,3 @@
   university: PTIT - Posts and Telecommunication Institute of Technology
   country: vietnam
   rank: 3
-- name: UUM (3 Teams)
-  university: Universiti Utara Malaysia
-  country: malaysia
-  rank: 0
-- name: UMS (3 Teams)
-  university: University Malaysia Sabah
-  country: malaysia
-  rank: 0
-- name: UiTM (1 Team)
-  university: UiTM Chendering, Terengganu
-  country: malaysia
-  rank: 0
