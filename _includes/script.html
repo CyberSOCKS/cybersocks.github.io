@@ -1,29 +1,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/3.0.1/typeit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
   console.log( "Welcome to the Cybersocks Regional Competition 2016!" );
-});
-$('#typing').typeIt({
-    lifeLike: true,
-    autoStart: false,
-    cursor: false
-});
-$('.button-collapse').sideNav({
-  menuWidth: 300,
-  edge: 'right',
-  closeOnClick: true
-});
-$('.dropdown-button').dropdown({
-  inDuration: 300,
-  outDuration: 325,
-  constrain_width: false,
-  hover: true,
-  gutter: 0,
-  belowOrigin: true,
-  alignment: 'left'
+  $('.button-collapse').sideNav({
+    menuWidth: 300,
+    edge: 'right',
+    closeOnClick: true
+  });
+  $('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 325,
+    constrain_width: false,
+    hover: true,
+    gutter: 0,
+    belowOrigin: true,
+    alignment: 'left'
+  });
+  $('.modal').modal();
 });
 </script>
 {% if page.permalink == "/" %}

@@ -9,16 +9,15 @@
         {% endfor %}
         <li><a class="dropdown-button" href="/#!" data-activates="quals">QUALS</a></li>
       </ul>
-      <ul id="mobile-nav" class="side-nav center-align">
-        {% for nav in site.data.navigation %}
-        <li><a href="{{ nav.link }}">{{ nav.menu }}</a></li>
-        {% endfor %}
-        <li><a href="/resources">RESOURCES</a></li>
-      </ul>
     </div>
   </nav>
 </div>
-
+<ul id="mobile-nav" class="side-nav center-align">
+  {% for nav in site.data.navigation %}
+  <li><a href="{{ nav.link }}">{{ nav.menu }}</a></li>
+  {% endfor %}
+  <li><a href="/resources">RESOURCES</a></li>
+</ul>
 <ul id="quals" class="dropdown-content">
   {% for quals in site.data.country %}
   <li><a href="/{{ quals.name | downcase }}">{{ quals.name }}</a></li>
