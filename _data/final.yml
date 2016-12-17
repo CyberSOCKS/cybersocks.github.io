@@ -1,41 +1,61 @@
 # Competition participant type list
-- name: NOPSled
-  university: Malaysian Institute of Information Technology (MIIT)
-  country: malaysia
+- name: N/A
+  university: VNU University of Engineering and Technology
+  country: vietnam
+  quals: 2350
+  final: 1950
   rank: 1
 - name: There
   university: UNITEN
   country: malaysia
+  quals: 2000
+  final: 1950
   rank: 2
+- name: NOPSled
+  university: Malaysian Institute of Information Technology (MIIT)
+  country: malaysia
+  quals: 2000
+  final: 1700
+  rank: 3
 - name: AlFarabi 2.0
   university: UiTM Cawangan Perlis
   country: malaysia
-  rank: 3
+  quals: 1700
+  final: 1700
+  rank: 4
+- name: HUST 4
+  university: Hanoi University of Science and Technology
+  country: vietnam
+  quals: 2000
+  final: 1600
+  rank: 5
+- name: Pakchu
+  university: PTIT - Posts and Telecommunication Institute of Technology
+  country: vietnam
+  quals: 1850
+  final: 1550
+  rank: 6
 - name: tak_tau
   university: Universiti Teknologi Petronas
   country: malaysia
-  rank: 4
-- name: CRYP70
-  university: Universiti Teknologi Petronas
-  country: malaysia
-  rank: 6
-- name: Kazuto
-  university: Universiti Teknologi Petronas
-  country: malaysia
+  quals: 1450
+  final: 1300
   rank: 7
 - name: cuba teka?
   university: Universiti Teknologi Petronas
   country: malaysia
+  quals: 1450
+  final: 650
   rank: 8
-- name: N/A
-  university: VNU University of Engineering and Technology
-  country: vietnam
-  rank: 1
-- name: HUST 4
-  university: Hanoi University of Science and Technology
-  country: vietnam
-  rank: 2
-- name: Pakchu
-  university: PTIT - Posts and Telecommunication Institute of Technology
-  country: vietnam
-  rank: 3
+- name: Kazuto
+  university: Universiti Teknologi Petronas
+  country: malaysia
+  quals: 1450
+  final: 650
+  rank: 9
+- name: CRYP70
+  university: Universiti Teknologi Petronas
+  country: malaysia
+  quals: 1450
+  final: 650
+  rank: 10

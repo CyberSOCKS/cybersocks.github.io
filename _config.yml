@@ -9,7 +9,7 @@ markdown: kramdown
 permalink: /:title
 
 # Custom variables
-version: "2.3.2"
+version: "2.3.3"
 timezone: Asia/Kuala_Lumpur
 kramdown:
   input: GFM
@@ -26,6 +26,6 @@ sass:
 location: Casuarina @ Meru, Ipoh, Perak, Malaysia
 date:
   quals: 22nd – 23rd October 2016
-  regional: 10th December 2016
+  regional: 10 December 2016
 link:
   utphax: https://utphax.cyberhax.club/

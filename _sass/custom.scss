@@ -94,25 +94,20 @@ footer {
   }
 }
 
-.pad-top {
-  padding-top: 20px;
-}
-.pad-down {
-  padding-bottom: 20px;
-}
-.pad-down-large {
-  padding-bottom: 50px;
-}
-.pad-center {
-  padding: 10px 0;
-}
-.row0 {
-  margin-bottom: 0px;
-}
-
+.pad-top { padding-top: 20px; }
+.pad-down { padding-bottom: 20px; }
+.pad-down-large { padding-bottom: 50px; }
+.pad-down-very-large { padding-bottom: 100px; }
+.pad-center { padding: 10px 0; }
+.row0 { margin-bottom: 0px; }
+.row1 { margin-bottom: -20px; }
 .tabs .indicator { background-color: $secondary-color; }
-.team { text-align: left; }
-
+.team {
+  text-align: left;
+  .badge {
+    color: $text-color;
+  }
+}
 .info {
   padding: 25px 0 !important;
 }
@@ -123,4 +118,18 @@ footer {
       color: #757575;
     }
   }
+}
+.chal {
+  .title { color: $text-color; }
+  .point { color: $black-color; }
+  .point, .title {
+    a {
+      color: inherit;
+    }
+  }
+}
+.mclose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

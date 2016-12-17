@@ -17,7 +17,7 @@ permalink: /
 	</div>
 
 	<!-- Countdown -->
-	<div class="bg-clock pad-top">
+	<!--div class="bg-clock pad-top">
 		<h5 id="typing" class="flow-text">Regional competition final round starts in...</h5><br>
 		<div id="clockdiv">
 			<div class="clock hoverable">
@@ -40,82 +40,83 @@ permalink: /
 		<div class="pad-top"></div>
 		<div class="pad-top"></div>
 	</div>
-</div>
-
-<!-- More Information -->
-<div class="row row0 info-link">
-	{% for info in site.data.resources %}
-		{% if info.id != "committee" %}
-		<a href="/resources">
-			<div class="col s3 center info {{ info.color }}">
-				<i class="material-icons">{{ info.icon }}</i><br>{{ info.name }}
-			</div>
-		</a>
-		{% endif %}
-	{% endfor %}
-</div>
+</div-->
 
 <!-- FINAL Participating Teams -->
 <div class="bg-gradient bg-clock">
-	<div class="row row0 pad-center center">
+	<div class="row row0 pad-center">
 		<br>
-		<div class="col s12">
+		<div class="col s12 center">
 			<h5 class="focus">Competing Teams <i class="fa fa-bar-chart" aria-hidden="true"></i></h5>
 			<h6>in the CyberSOCKS Final Round</h6>
 		</div>
 		<div class="col s12"><br></div>
 		{% for team in site.data.final %}
-			<div class="col s6 m3">
+			<div class="col s6 m4 l3">
 				<div class="card-panel white team">
-					{{ team.name }}
-					<a onclick="Materialize.toast('{{ team.university }}', 5000)"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-					<div class="chip pull-right hide-on-med-and-down" title="{{ team.country | capitalize }}">
-						<img src="/assets/img/{{ team.country }}.png" alt="{{ team.country }}">
-						{% if team.rank != 0 %} Rank {{ team.rank }} {% else %} Invitation {% endif %}
-					</div>
+					{{ team.name }}<span class="badge blue">{{ team.rank }}</span>
+					<a onclick="$('#rank{{ team.rank }}').modal('open')"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 				</div>
+			</div>
+			<div id="rank{{ team.rank }}" class="modal bottom-sheet">
+				<div class="modal-content">
+					<h4>{{ team.name }}</h4>
+					<p>{{ team.university }}</p>
+					<div class="chip hoverable" title="{{ team.country | capitalize }}">
+						<img src="/assets/img/{{ team.country }}.png" alt="{{ team.country }}">
+						Rank {{ team.rank }}
+					</div>
+					<p>Participants details coming soon.</p>
+				</div>
+				<nav class="chal blue">
+					<div class="nav-wrapper">
+						<div class="col s12">
+							<a class="breadcrumb title">QUALS</a>
+							<a class="breadcrumb point">{{ team.quals }}</a>
+							<a class="breadcrumb title">FINAL</a>
+							<a class="breadcrumb point">{{ team.final }}</a>
+						</div>
+					</div>
+				</nav>
+				<button class="modal-action modal-close btn-floating grey waves-effect waves-light hoverable mclose"><i class="fa fa-times" aria-hidden="true"></i></button>
 			</div>
 		{% endfor %}
 	</div>
 	<br>
 </div>
 
-<!-- Regional Country list-->
+<!-- Qualification Rounds -->
 <div id="twrap">
 	<div id="twrapcover">
 		<div class="container-fluid section row center">
-			<h4 id="typing" class="flow-text">CyberSOCKS Qualification Rounds</h4>
+			<h4 class="flow-text">CyberSOCKS Qualification Rounds</h4>
 			<div class="col s12">
 				{% for country in site.data.country %}
 				<li>{% if country.name != "Malaysia" %}&bull;{% endif %}<a href="{{ country.name | downcase }}">&nbsp;&nbsp;{{ country.name }}&nbsp;</a></li>
 				{% endfor %}
 				<p>{{ site.date.quals }}</p>
 			</div>
-		</div>
-	</div>
-</div>
-
-<!-- QUALS Participating Teams -->
-<div class="grey lighten-1">
-	<div class="row row0 pad-center center">
-		<br>
-		<div class="col s12 m6">
-			<h5 class="focus">Participating Teams <i class="fa fa-bar-chart" aria-hidden="true"></i></h5>
-			<h6>in the CyberSOCKS Qualification Rounds</h6>
-		</div>
-		<div class="col s12 hide-on-med-and-up">
-			<br>
-		</div>
-		{% for country in site.data.country %}
-		<div class="col s6 m3">
-			<div id="{{ country.name }}">fetching data...</div><br>
-			<div class="chip">
-				<a href="{{ country.name | downcase }}">{{ country.name }}</a>
+			<div class="pad-down-very-large hide-on-small-only"></div>
+			<div class="row row0 pad-center center">
+				<br>
+				<div class="col s12 m6">
+					<h5 class="focus">Participating Teams <i class="fa fa-bar-chart" aria-hidden="true"></i></h5>
+					<h6>in the CyberSOCKS Qualification Rounds</h6>
+				</div>
+				<div class="col s12 hide-on-med-and-up">
+					<br>
+				</div>
+				{% for country in site.data.country %}
+				<div class="col s6 m3">
+					<div id="{{ country.name }}">fetching data...</div><br>
+					<div class="chip">
+						<a href="{{ country.name | downcase }}">{{ country.name }}</a>
+					</div>
+				</div>
+				{% endfor %}
 			</div>
 		</div>
-		{% endfor %}
 	</div>
-	<br>
 </div>
 
 <!-- Main Sponsors -->
@@ -132,13 +133,26 @@ permalink: /
 	</div>
 </div>
 
-<div class="container section row row0 center">
+<div class="container section row center">
 	<div class="col s4 offset-s4">
-		<a href="http://tourismperakmalaysia.com/" target="_blank"><img src="/assets/img/tourism-perak-logo.png" alt="Tourism Perak 2017" class="responsive-img" /></a>
+		<a href="http://tourismperakmalaysia.com/" target="_blank"><img src="/assets/img/tourism-perak-logo.png" alt="Tourism Perak 2017" class="responsive-img focus" /></a>
 	</div>
 </div>
 
-<script type="text/javascript">
+<!-- More Information -->
+<div class="row row1 info-link">
+	{% for info in site.data.resources %}
+		{% if info.id != "committee" %}
+		<a href="/resources">
+			<div class="col s3 center focus info {{ info.color }}">
+				<i class="material-icons">{{ info.icon }}</i><br>{{ info.name }}
+			</div>
+		</a>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<!--script type="text/javascript">
 function getTimeRemaining(endtime) {
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor((t / 1000) % 60);
@@ -183,4 +197,4 @@ function pad(num, size) {
 		while (s.length < size) s = "0" + s;
 		return s;
 }
-</script>
+</script-->
