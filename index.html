@@ -52,7 +52,7 @@ permalink: /
 		</div>
 		<div class="col s12"><br></div>
 		{% for team in site.data.final %}
-			<div class="col s6 m4 l3">
+			<div class="col s10 offset-s1 m4 l3">
 				<div class="card-panel white team">
 					{{ team.name }}<span class="badge blue">{{ team.rank }}</span>
 					<a onclick="$('#rank{{ team.rank }}').modal('open')"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
