@@ -28,19 +28,34 @@ permalink: /
 		{% for team in site.data.final %}
 			<div class="col s10 offset-s1 m4 l3">
 				<div class="card-panel white team">
-					{{ team.name }}<span class="badge blue">{{ team.rank }}</span>
+					{{ team.team }}<span class="badge blue">{{ team.rank }}</span>
 					<a onclick="$('#rank{{ team.rank }}').modal('open')"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div id="rank{{ team.rank }}" class="modal bottom-sheet">
-				<div class="modal-content">
-					<h4>{{ team.name }}</h4>
+				<div class="modal-content row">
+					<h4>{{ team.team }}</h4>
 					<p>{{ team.university }}</p>
 					<div class="chip hoverable" title="{{ team.country | capitalize }}">
 						<img src="/assets/img/{{ team.country }}.png" alt="{{ team.country }}">
 						Rank {{ team.rank }}
+					</div><br><br>
+					<div class="col s12 m8 offset-m2 left-align">
+						<ul class="collapsible" data-collapsible="accordion">
+							<li>
+								<div class="collapsible-header blue white-text active"><i class="material-icons">people</i>Team Members</div>
+								<div class="collapsible-body">
+									<ul class="collection">
+										{% for member in team.members %}
+										{% assign name = member.name | split: ' ' %}
+										{% capture casedname %}{% for each in name %}{{ each | capitalize }} {% endfor %}{% endcapture %}
+										<li class="collection-item">{{ casedname }}<a class="pull-right" href="{{ member.email | prepend: "mailto:" }}"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+										{% endfor %}
+									</ul>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<p>Participants details coming soon.</p>
 				</div>
 				<nav class="chal blue">
 					<div class="nav-wrapper">

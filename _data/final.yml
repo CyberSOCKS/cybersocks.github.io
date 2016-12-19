@@ -1,61 +1,131 @@
 # Competition participant type list
-- name: N/A
+- team: N/A
   university: VNU University of Engineering and Technology
   country: vietnam
+  members:
+    - name: đỗ quang thành
+      email: thanhdq3096@gmail.com
+    - name: nguyễn huy hùng
+      email: hungnguyenwmz@gmail.com
+    - name: trần tuấn minh
+      email: myoki.crystal@gmail.com
   quals: 2350
   final: 1950
   rank: 1
-- name: There
+- team: There
   university: UNITEN
   country: malaysia
+  members:
+    - name: lim kien seng
+      email: lim2481284@gmail.com
+    - name: nazrul affiq bin ahmad amimar
+      email: nazrulaffiq@yahoo.com
+    - name: mokhdzani faeq bin mohamed fauad
+      email: mokhdzani.faeq@gmail.com
   quals: 2000
   final: 1950
   rank: 2
-- name: NOPSled
+- team: NOPSled
   university: Malaysian Institute of Information Technology (MIIT)
   country: malaysia
+  members:
+    - name: mohamad amshar bin solaiman
+      email: seriousubs@gmail.com
+    - name: muhammad najamuddin bin sapia'i
+      email: binpda.shark@gmail.com
+    - name: muhammad anas haidhar bin nasaruddin
+      email: anazhaidhar@gmail.com
   quals: 2000
   final: 1700
   rank: 3
-- name: AlFarabi 2.0
+- team: AlFarabi 2.0
   university: UiTM Cawangan Perlis
   country: malaysia
+  members:
+    - name: mohd shahril bin zainol abidin
+      email: mohd_shahril_96@yahoo.com
+    - name: mohd shafiq aiman bin mohamad zulrahim
+      email: shafik8587@gmail.com
+    - name: muhammad fairus husni bin mohd 'aseri
+      email: husniaseri@yahoo.com
   quals: 1700
   final: 1700
   rank: 4
-- name: HUST 4
+- team: HUST 4
   university: Hanoi University of Science and Technology
   country: vietnam
+  members:
+    - name: ta van dat
+      email: arsfc010@gmail.com
+    - name: nguyen duc manh
+      email: 20132528@student.hust.edu.vn
+    - name: do minh tuan
+      email: tuanit96@gmail.com
   quals: 2000
   final: 1600
   rank: 5
-- name: Pakchu
+- team: Pakchu
   university: PTIT - Posts and Telecommunication Institute of Technology
   country: vietnam
+  members:
+    - name: anh ha do
+      email: prawps@gmail.com
+    - name: truong minh ha
+      email: haminhtruongd13at3@gmail.com
+    - name: tuan minh vu
+      email: wtfminhtuan@gmail.com
   quals: 1850
   final: 1550
   rank: 6
-- name: tak_tau
+- team: tak_tau
   university: Universiti Teknologi Petronas
   country: malaysia
+  members:
+    - name: muhammad nazmi bin mat asri
+      email: nazmiasri95@gmail.com
+    - name: muhammad fadzil bin mohd jusri
+      email: fadziljusri@gmail.com
+    - name: mohammad khursani bin mohd shaib
+      email: khursani8@gmail.com
   quals: 1450
   final: 1300
   rank: 7
-- name: cuba teka?
+- team: cuba teka?
   university: Universiti Teknologi Petronas
   country: malaysia
+  members:
+    - name: nasaruddin bin esa
+      email: 1nasaruddinesa@gmail.com
+    - name: nurhaziqah bt mohamad latif
+      email: haziqahlatif@gmail.com
+    - name: prasad a/l madhavan
+      email: prasad130495@gmail.com
   quals: 1450
   final: 650
   rank: 8
-- name: Kazuto
+- team: Kazuto
   university: Universiti Teknologi Petronas
   country: malaysia
+  members:
+    - name: muhammad firdaus bin hishamuddin
+      email: firdaushishamuddin@gmail.com
+    - name: arif asyraf bin mohd norain
+      email: ariffly2210@gmail.com
+    - name: muhamad amirul aizat bin mahpop
+      email: aizatmahpop@yahoo.co.uk
   quals: 1450
   final: 650
   rank: 9
-- name: CRYP70
+- team: CRYP70
   university: Universiti Teknologi Petronas
   country: malaysia
+  members:
+    - name: augusto simbine
+      email: augustosimbine93@gmail.com
+    - name: muhammad farid b. mohd zaid
+      email: black.parade90@gmail.com
+    - name: nurul insyirah binti muhammad amirul chang
+      email: insyirahamirulchang@gmail.com
   quals: 1450
   final: 650
   rank: 10
