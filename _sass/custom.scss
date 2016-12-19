@@ -134,3 +134,15 @@ footer {
   right: 10px;
 }
 .modal.bottom-sheet { max-height: 100%; }
+
+.collection.comm a.collection-item:not(.active) {
+  color: $black-color;
+}
+.collection.comm a.collection-item:not(.active):hover {
+  color: $text-color;
+	background-color: #f57c00;
+}
+.comm span {
+  color: #757575;
+  font-size: small;
+}

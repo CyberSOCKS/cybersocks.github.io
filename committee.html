@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /committee
+title: Committee
+---
+{% include wrap.html %}
+<div class="container section row">
+  <div class="col s12 center">
+    For general question or question related to the regional tournament please contact us at <a href="mailto:hello@{{ site.domain }}">&nbsp;<i class="fa fa-send" aria-hidden="true"></i>&nbsp;hello@{{ site.domain }}</a><br><br>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card-panel orange darken-2 white-text center">{{ site.description }}</div>
+      </div>
+      {% for each in site.data.committee %}
+      {% if each.dept == null %}
+      <div class="col s12 m8 offset-m2">
+        <div class="collection comm">
+          <a class="collection-item"><span>{{ each.is }}</span><br><i class="fa fa-user-circle" aria-hidden="true"></i> {{ each.as }}</a>
+        </div>
+      </div>
+      {% endif %}
+      {% if each.dept != null %}
+      <div class="col s12 m10 offset-m1">
+        <div class="card-panel chat-blue white-text center">{{ each.dept }}</div>
+      </div>
+      <div class="col s12 m8 offset-m2">
+        <div class="collection comm">
+          <a class="collection-item"><span>HEAD OF DEPARTMENT</span><br><i class="fa fa-user-circle" aria-hidden="true"></i> {{ each.head }}</a>
+          <a class="collection-item"><span>ASST. HEAD OF DEPARTMENT</span><br><i class="fa fa-user-circle-o" aria-hidden="true"></i> {{ each.asst }}</a>
+          {% for all in each.comm %}
+          <a class="collection-item"><span>COMMITTEE</span><br><i class="fa fa-user-o" aria-hidden="true"></i> {{ all.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
